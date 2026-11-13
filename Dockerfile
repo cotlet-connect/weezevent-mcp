@@ -3,4 +3,4 @@ WORKDIR /app
 COPY . /app
 RUN pip install --no-cache-dir .
 ENV PYTHONUNBUFFERED=1
-ENTRYPOINT ["crewnest-mcp"]
+ENTRYPOINT ["weezevent-mcp"]

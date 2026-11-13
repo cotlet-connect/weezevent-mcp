@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CrewNest through Cotlet.dev: stdio MCP server and small CLI over the hosted Cotlet.dev MCP server (stdlib only)."""
+"""Weezevent through Cotlet.dev: stdio MCP server and small CLI over the hosted Cotlet.dev MCP server (stdlib only)."""
 import argparse
 import json
 import os
@@ -7,15 +7,15 @@ import sys
 import urllib.error
 import urllib.request
 
-START_URL = "https://www.crewnest.app"
-SLUG = "crewnest"
+START_URL = "https://www.weezevent.app"
+SLUG = "weezevent"
 URL = "https://cotlet.dev/mcp/v1"
 GUIDE_FIELD = "app"
 KEY_HELP = "Set COTLET_API_KEY. Get a key at https://cotlet.dev/app"
-NAME = "CrewNest"
+NAME = "Weezevent"
 JOB = "prepare estimates and manage jobs and crew assignments"
 VERSION = "1.1.0"
-PREFIX = "crewnest"
+PREFIX = "weezevent"
 PROTOCOLS = ("2025-06-18", "2025-03-26", "2024-11-05")
 
 CONFIG = {"mcpServers": {"cotlet": {"url": URL, "headers": {"Authorization": "Bearer ${COTLET_API_KEY}"}}}}
@@ -200,7 +200,7 @@ def connect():
 
 
 def main():
-    p = argparse.ArgumentParser(description="CrewNest through Cotlet.dev")
+    p = argparse.ArgumentParser(description="Weezevent through Cotlet.dev")
     sub = p.add_subparsers(dest="cmd")
     for name in ("serve", "connect", "status", "guide", "tools"):
         sub.add_parser(name)

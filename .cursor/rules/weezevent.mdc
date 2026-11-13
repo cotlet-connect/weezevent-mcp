@@ -1,12 +1,12 @@
 ---
-description: Work in CrewNest through Cotlet.dev
+description: Work in Weezevent through Cotlet.dev
 globs:
 alwaysApply: false
 ---
 
-# CrewNest through Cotlet.dev
+# Weezevent through Cotlet.dev
 
-- First call `cotlet_app_guide` with app "crewnest".
+- First call `cotlet_app_guide` with app "weezevent".
 - Then use `cotlet_browser_open`, `cotlet_browser_read` and `cotlet_browser_click`, one call at a time. Wait for each answer.
 - At a sign-in page or CAPTCHA, stop and give the user the browser link.
 - Ask the user before sending, publishing, deleting or paying.
